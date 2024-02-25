@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JadwalKu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Protest+Strike&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Protest+Strike&display=swap" rel="stylesheet">
+
+</head>
+<body  >
+<section class="container-xxl">
+
+    <header class="head">
+        <h1 class="title">Jadwalku Semester 4</h1>
+       
+    </header>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+          
+            <img src="/image/senin.png" class="card-img-top" alt="senin">
+            <div class="card-body">
+              <h5 class="card-title">Senin</h5>
+              <p class="card-text">Belum ada tugas</p>
+              <div class="atas">
+                <button onclick="openPopup()" class="game-button">lihat</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="card">
+            <img src="/image/selasa.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title2">Selasa</h5>
+              <p class="card-text2">Belum ada tugas</p>
+              <div class="atas2">
+                <button onclick="openPopup2()" class="game-button2">lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col3">
+          <div class="card">
+            <img src="/image/rabu.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title3">Rabu</h5>
+              <p class="card-text3">Belum ada tugas</p>
+              <div class="atas3">
+                <button onclick="openPopup3()" class="game-button3">lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="card">
+            <img src="/image/kamis.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title4">Kamis</h5>
+              <p class="card-text4">Belum ada tugas</p>
+              <div class="atas4">
+                <button onclick="openPopup4()" class="game-button4">lihat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col5">
+            <div class="card">
+              <img src="/image/jum'at.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title5">Jum'at</h5>
+                <p class="card-text5">Belum ada tugas</p>
+                <div class="atas5">
+                  <button onclick="openPopup5()" class="game-button5">lihat</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col6">
+            <div class="card">
+              <img src="/image/sabtu.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title6">Sabtu</h5>
+                <p class="card-text6">Libur melakukan aktivitas positif</p>
+                <div class="atas6">
+                  <button onclick="openPopup6()" class="game-button6">lihat</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-overlay" id="popupOverlay" style="display: none;">
+        <div class="container-content">
+          <span class="popup-close" onclick="closePopup()">&times;</span>
+          <h2>JadwalKu</h2>
+          <h4 class="senin">Senin</h4>
+          <img class="container-xxl" src="/image/Jsenin.png" alt="jsenin">
+          <hr>
+          <h4 class="catat">Catatan</h4>
+          <p class="isi">belum ada tugas</p>
+        </div>
+        </div>
+        <div class="popup-overlay2" id="popupOverlay2" style="display: none;">
+          <div class="container-content2">
+            <span class="popup-close2" onclick="closePopup2()">&times;</span>
+            <h2>JadwalKu</h2>
+            <h4 class="selasa">Selasa</h4>
+            <img class="container-xxl" src="/image/Jselasa.png" alt="jselasa">
+            <hr>
+            <h4 class="catat2">Catatan</h4>
+            <p class="isi2">belum ada tugas</p>
+            
+          </div>
+      </div>
+      <div class="popup-overlay3" id="popupOverlay3" style="display: none;">
+        <div class="container-content3">
+          <span class="popup-close3" onclick="closePopup3()">&times;</span>
+          <h2>JadwalKu</h2>
+          <h4 class="rabu">Rabu</h4>
+          <img class="container-xxl" src="/image/Jrabu.png" alt="jRabu">
+          <hr>
+          <h4 class="catat3">Catatan</h4>
+          <p class="isi3">belum ada tugas</p>
+        </div>
+        </div>
+        <div class="popup-overlay4" id="popupOverlay4" style="display: none;">
+          <div class="container-content4">
+            <span class="popup-close4" onclick="closePopup4()">&times;</span>
+            <h2>JadwalKu</h2>
+            <h4 class="kamis">Kamis</h4>
+            <img class="container-xxl" src="/image/Jkamis.png" alt="jkamis">
+            <hr>
+            <h4 class="catat4">Catatan</h4>
+            <p class="isi4">belum ada tugas</p>
+          </div>
+          </div>
+          <div class="popup-overlay5" id="popupOverlay5" style="display: none;">
+            <div class="container-content5">
+              <span class="popup-close5" onclick="closePopup5()">&times;</span>
+              <h2>JadwalKu</h2>
+              <h4 class="jumat">Jumat</h4>
+              <img class="container-xxl" src="/image/Jjumat.png" alt="jjumat">
+              <hr>
+              <h4 class="catat5">Catatan</h4>
+              <p class="isi5">belum ada tugas</p>
+            </div>
+            </div>
+            <div class="popup-overlay6" id="popupOverlay6" style="display: none;">
+              <div class="container-content6">
+                <span class="popup-close6" onclick="closePopup6()">&times;</span>
+                <h2>JadwalKu</h2>
+                <h4 class="sabtu">Sabtu</h4>
+                <img class="container-xxl" src="/image/Jsabtu.png" alt="jsabtu">
+                <hr>
+                <h4 class="catat6">Catatan</h4>
+                <p class="isi6">belum ada tugas</p>
+              </div>
+              </div>
+</section> 
+<section class="container-fluid">
+ <div class="contact">
+  <img class="copy" src="/image/copyright.png" alt="copy">
+  <a class="mail" href="#">aliyudinda146@gmail.com</a>
+  <h3 class="nama">2024 - CREATED BY Aliyudin555</h3>  
+</div>
+<div class="media">
+  <a href="https://www.instagram.com/aliyudin_555/"><img class="ig" src="/image/igcolor.png" alt="ig"></a>
+  <a href="https://www.youtube.com/channel/UCPZ_mttD-Yt2kyrRgbiaF6w"><img class="yt" src="/image/ytcolor.png" alt="yt"></a>
+  <a href="https://github.com/Aliyudin555"><img class="github" src="/image/githubcolor.png" alt="github"></a>
+  <a href="mailto:aliyudinda@gamil.com"><img class="email" src="/image/emailcolor.png" alt="email"></a>
+  <a href="https://discord.gg/9ppeQqhn"><img class="discord" src="/image/discord.png" alt="discord"></a>
+  <a href="https://www.tiktok.com/@aliyudin_555"><img class="tiktok" src="/image/tiktok.png" alt="tiktok"></a>
+</div>
+ 
+</section>  
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+  function openPopup() {
+    document.getElementById('popupOverlay').style.display = 'flex';
+  }
+
+  function closePopup() {
+    document.getElementById('popupOverlay').style.display = 'none';
+  }
+</script>
+<script>
+  function openPopup2() {
+    document.getElementById('popupOverlay2').style.display = 'flex';
+  }
+
+  function closePopup2() {
+    document.getElementById('popupOverlay2').style.display = 'none';
+  }
+</script>
+<script>
+  function openPopup3() {
+    document.getElementById('popupOverlay3').style.display = 'flex';
+  }
+
+  function closePopup3() {
+    document.getElementById('popupOverlay3').style.display = 'none';
+  }
+</script>
+<script>
+  function openPopup4() {
+    document.getElementById('popupOverlay4').style.display = 'flex';
+  }
+
+  function closePopup4() {
+    document.getElementById('popupOverlay4').style.display = 'none';
+  }
+</script>
+<script>
+  function openPopup5() {
+    document.getElementById('popupOverlay5').style.display = 'flex';
+  }
+
+  function closePopup5() {
+    document.getElementById('popupOverlay5').style.display = 'none';
+  }
+</script>
+<script>
+  function openPopup6() {
+    document.getElementById('popupOverlay6').style.display = 'flex';
+  }
+
+  function closePopup6() {
+    document.getElementById('popupOverlay6').style.display = 'none';
+  }
+</script>
+</body>
+</html>

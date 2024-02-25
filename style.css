@@ -1,0 +1,849 @@
+body{
+    width: 100%;
+    height: 100vh;
+
+}
+.container-xxl{
+  background-color: #000000c9;
+  
+}
+.head{
+    
+    display: flex;
+    justify-content: center;
+   
+}
+.title{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(223, 228, 224);   
+    
+}
+.title:hover{
+    color: rgb(250, 0, 0);
+    text-shadow: 2px 2px 4px #000000;
+}
+.card{
+    position: relative;
+}
+
+.card-body{
+    
+  background-color: rgba(216, 215, 213, 0.747);
+  box-shadow: 4px 7px 10px rgba(47, 47, 48, 0.5);
+  transition: 2s;
+}
+
+.atas{
+    background-color: rgba(216, 215, 213, 0.747);
+    /* box-shadow: 10px 7px 10px rgba(47, 47, 48, 0.5); */
+    width: 100%;
+  height: 100%;
+  top: 101%;
+  position: absolute;
+  background: #00000052;
+  backdrop-filter: 50px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  padding: 5px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;   
+  left: 0rem;
+}
+.game-button{
+    position: relative;
+    text-align: center;
+    top: 4rem;
+    color: rgb(255, 255, 255);
+    background: #1d1c1c3a;
+    padding: 10px 20px;
+    border-radius: 100px;
+    text-transform: capitalize;
+    left: 8rem;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    font-weight: 100;
+    cursor: pointer;
+    width: 130px;
+}
+.col{
+  display: flex;
+  overflow: hidden;
+}
+.col:hover .atas{
+    top: 0;
+}
+
+/* popup */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 25, 25, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+.container-content {
+    z-index: 999;
+    background: rgb(248, 248, 255);
+    background: linear-gradient(308deg, rgba(240, 240, 247, 0) 0%, rgb(240, 231, 241) 6%, rgb(108, 194, 211) 100%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);
+    width: 100%; 
+    max-width: 900px; 
+    height: 100%;
+    max-height: 550px;
+    text-align: center;
+  }
+  
+  .container-content h2{
+    color:  #fff8f8;
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    text-shadow: 2px 2px 4px #000000f1;
+  }
+  .popup-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff9f9;
+    cursor: pointer;
+    
+  }
+.senin{
+  position: relative;
+  text-align: left;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #000000f1;
+}
+.catat{
+  position: relative;
+  text-align: left;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #000000f1;
+}
+.isi{
+  position: relative;
+  display: flex;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+}
+
+
+/* popup 2 */
+.game-button2{
+  position: relative;
+  text-align: center;
+  top: 4rem;
+  color: rgb(255, 255, 255);
+  background: #1d1c1c3a;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-transform: capitalize;
+  left: 8rem;
+  border: none;
+  outline: none;
+  font-size: 10px;
+  font-weight: 100;
+  cursor: pointer;
+  width: 130px;
+}
+.col2{
+  display: flex;
+  overflow: hidden;
+}
+.col2:hover .atas2{
+    top: 0;
+}
+
+.popup-overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 25, 25, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+.container-content2 {
+    /* position: absolute; */
+    z-index: 999;
+    background: rgb(244, 248, 2);
+    background: linear-gradient(308deg, rgba(211, 243, 31, 0.493) 0%, rgb(80, 168, 127) 6%, rgb(255, 238, 0) 100%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);
+    width: 100%; /* Menyesuaikan lebar sesuai kebutuhan */
+    max-width: 900px; /* Batasan lebar maksimum */
+    height: 100%;
+    max-height: 550px;
+    text-align: center;
+  }
+  
+  .container-content2 h2{
+    color:  #fff8f8;
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    text-shadow: 2px 2px 4px #000000f1;
+  }
+  .popup-close2 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff9f9;
+    cursor: pointer;
+    
+  }
+.selasa{
+  position: relative;
+  text-align: left;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #000000f1;
+}
+.catat2{
+  position: relative;
+  text-align: left;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #000000f1;
+}
+.isi2{
+  position: relative;
+  display: flex;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+}
+.card2{
+  position: relative;
+}
+.card-body2{ 
+background-color: rgba(216, 215, 213, 0.747);
+box-shadow: 4px 7px 10px rgba(47, 47, 48, 0.5);
+transition: 2s;
+}
+.atas2{
+background-color: rgba(24, 24, 23, 0.747);
+width: 100%;
+height: 100%;
+top: 101%;
+position: absolute;
+background: #00000052;
+backdrop-filter: 50px;
+border-radius: 5px;
+color: rgb(0, 0, 0);
+padding: 5px; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+transition: 2s;   
+left: 0rem;
+}
+
+/* popup 3 */
+.game-button3{
+  position: relative;
+  text-align: center;
+  top: 4rem;
+  color: rgb(255, 255, 255);
+  background: #1d1c1c3a;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-transform: capitalize;
+  left: 8rem;
+  border: none;
+  outline: none;
+  font-size: 10px;
+  font-weight: 100;
+  cursor: pointer;
+  width: 130px;
+}
+.col3{
+  display: flex;
+  overflow: hidden;
+}
+.col3:hover .atas3{
+    top: 0;
+}
+.popup-overlay3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 25, 25, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+.container-content3 {
+    z-index: 999;
+    background: rgb(2,0,36);
+    background: linear-gradient(308deg, rgb(96, 94, 148) 0%, rgb(43, 24, 206) 6%, rgb(252, 255, 103) 100%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);
+    width: 100%; 
+    max-width: 900px; 
+    height: 100%;
+    max-height: 550px;
+    text-align: center;
+  }
+  .container-content3 h2{
+    color:  #fff8f8;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  text-shadow: 2px 2px 4px #000000f1;
+  }
+  .popup-close3 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff9f9;
+    cursor: pointer;
+  }
+.rabu{
+  position: relative;
+  text-align: left;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #000000f1;
+}
+.catat3{
+  position: relative;
+  text-align: left;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #000000f1;
+}
+.isi3{
+  position: relative;
+  display: flex;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+}
+.card3{
+  position: relative;
+}
+.card-body3{
+background-color: rgba(216, 215, 213, 0.747);
+box-shadow: 4px 7px 10px rgba(47, 47, 48, 0.5);
+transition: 2s;
+}
+.atas3{
+  background-color: rgba(216, 215, 213, 0.747);
+  width: 100%;
+height: 100%;
+top: 101%;
+position: absolute;
+background: #00000052;
+backdrop-filter: 50px;
+border-radius: 5px;
+color: rgb(0, 0, 0);
+padding: 5px; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+transition: 2s;   
+left: 0rem;
+}
+
+/* popup 4 */
+.game-button4{
+  position: relative;
+  text-align: center;
+  top: 4rem;
+  color: rgb(255, 255, 255);
+  background: #1d1c1c3a;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-transform: capitalize;
+  left: 8rem;
+  border: none;
+  outline: none;
+  font-size: 10px;
+  font-weight: 100;
+  cursor: pointer;
+  width: 130px;
+}
+.col4{
+  display: flex;
+  overflow: hidden;
+}
+.col4:hover .atas4{
+    top: 0;
+}
+.popup-overlay4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 25, 25, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+.container-content4 {
+   
+    z-index: 999;
+    background: rgb(2,0,36);
+    background: linear-gradient(308deg, rgb(131, 199, 64) 0%, rgb(79, 207, 4) 6%, rgb(255, 17, 0) 100%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);
+    width: 100%; 
+    max-width: 900px; 
+    height: 100%;
+    max-height: 550px;
+    text-align: center;
+  }
+  .container-content4 h2{
+    color:  #fff8f8;
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-shadow: 2px 2px 4px #000000f1;
+  }
+  .popup-close4 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff9f9;
+    cursor: pointer;
+  }
+.kamis{
+  position: relative;
+  text-align: left;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #000000f1;
+}
+.catat4{
+  position: relative;
+  text-align: left;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #000000f1;
+}
+.isi4{
+  position: relative;
+  display: flex;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+}
+.card4{
+  position: relative;
+}
+.card-body4{ 
+background-color: rgba(216, 215, 213, 0.747);
+box-shadow: 4px 7px 10px rgba(47, 47, 48, 0.5);
+transition: 2s;
+}
+.atas4{
+  background-color: rgba(216, 215, 213, 0.747);
+  width: 100%;
+height: 100%;
+top: 101%;
+position: absolute;
+background: #00000052;
+backdrop-filter: 50px;
+border-radius: 5px;
+color: rgb(0, 0, 0);
+padding: 5px; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+transition: 2s;   
+left: 0rem;
+}
+
+/* popup 5 */
+.game-button5{
+  position: relative;
+  text-align: center;
+  top: 4rem;
+  color: rgb(255, 255, 255);
+  background: #1d1c1c3a;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-transform: capitalize;
+  left: 8rem;
+  border: none;
+  outline: none;
+  font-size: 10px;
+  font-weight: 100;
+  cursor: pointer;
+  width: 130px;
+}
+.col5{
+  display: flex;
+  overflow: hidden;
+}
+.col5:hover .atas5{
+    top: 0;
+}
+.popup-overlay5 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 25, 25, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+.container-content5 {
+    z-index: 999;
+    background: rgb(2,0,36);
+    background: linear-gradient(308deg, rgb(51, 51, 51) 0%, rgb(139, 80, 2) 6%, rgb(117, 66, 7) 100%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);
+    width: 100%; 
+    max-width: 900px; 
+    max-height: 550px;
+    text-align: center;
+  }
+  .container-content5 h2{
+    color:  #fff8f8;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 4px #000000f1;
+  }
+  .popup-close5 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff9f9;
+    cursor: pointer;
+  }
+.jumat{
+  position: relative;
+  text-align: left;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #000000f1;
+}
+.catat5{
+  position: relative;
+  text-align: left;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #000000f1;
+}
+.isi5{
+  position: relative;
+  display: flex;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+}
+.card5{
+  position: relative;
+}
+.card-body5{
+background-color: rgba(216, 215, 213, 0.747);
+box-shadow: 4px 7px 10px rgba(47, 47, 48, 0.5);
+transition: 2s;
+}
+.atas5{
+  background-color: rgba(216, 215, 213, 0.747);
+  width: 100%;
+height: 100%;
+top: 101%;
+position: absolute;
+background: #00000052;
+backdrop-filter: 50px;
+border-radius: 5px;
+color: rgb(0, 0, 0);
+padding: 5px; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+transition: 2s;   
+left: 0rem;
+}
+
+/* popup 6 */
+.game-button6{
+  position: relative;
+  text-align: center;
+  top: 4rem;
+ color: rgb(255, 255, 255);
+    background: #1d1c1c3a;
+  padding: 10px 20px;
+  border-radius: 100px;
+  text-transform: capitalize;
+  left: 8rem;
+  border: none;
+  outline: none;
+  font-size: 10px;
+  font-weight: 100;
+  cursor: pointer;
+  width: 130px;
+}
+.col6{
+  display: flex;
+  overflow: hidden;
+}
+.col6:hover .atas6{
+    top: 0;
+}
+.popup-overlay6 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 25, 25, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+.container-content6 {
+    z-index: 999;
+    background: rgb(2,0,36);
+    background: linear-gradient(308deg, rgb(255, 228, 78) 0%, rgb(241, 238, 28) 6%, rgb(231, 133, 41) 100%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);
+    width: 100%; 
+    max-width: 900px; 
+    height: 100%;
+    max-height: 550px;
+    text-align: center;
+  }
+  .container-content6 h2{
+    color:  #fff8f8;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 4px #000000f1;
+  }
+  .popup-close6 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff9f9;
+    cursor: pointer;
+    
+  }
+.sabtu{
+  position: relative;
+  text-align: left;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #000000f1;
+}
+.catat6{
+  position: relative;
+  text-align: left;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #000000f1;
+}
+.isi6{
+  position: relative;
+  display: flex;
+  left: 5rem;
+  font-family: "Passion One", sans-serif;
+}
+.card6{
+  position: relative;
+}
+
+.card-body6{
+  
+background-color: rgba(216, 215, 213, 0.747);
+box-shadow: 4px 7px 10px rgba(47, 47, 48, 0.5);
+transition: 2s;
+}
+.atas6{
+  background-color: rgba(216, 215, 213, 0.747);
+  width: 100%;
+height: 100%;
+top: 101%;
+position: absolute;
+background: #00000052;
+backdrop-filter: 50px;
+border-radius: 5px;
+color: rgb(0, 0, 0);
+padding: 5px; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+transition: 2s;   
+left: 0rem;
+}
+
+
+/* copyright */
+.container-fluid{
+  height: 35vh;
+  background-color: #000000;
+}
+.contact{
+  text-align: center;
+}
+
+.mail{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  /* left: 6rem; */
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+font-size: 35px;
+width: 43%;
+color: #f1e8e8;
+}
+.mail:hover{
+  color: rgb(41, 41, 241);
+}
+.copy {
+  position: relative;
+display: block;
+margin: 0 auto;
+max-width: 100%;
+width: 1.7%;
+top: 6rem;
+left: -11rem;
+}
+.nama{
+  color: white;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  top:1.2rem;
+  left: -1.1rem;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  width: 40%; 
+  text-shadow: 3px 2px 5px #d8d7d7f1;
+
+}
+.media{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 50px;
+  width: 430px;
+  position: relative;
+  top: 3rem;
+  /* left: 1rem; */
+  display: flex;
+  justify-content: space-between;
+} 
+.ig{
+  width: 60%;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.ig:hover{
+  box-shadow: 4px 5px 10px rgba(221, 0, 85, 0.5);
+  transform: scale(95%);
+}
+.yt{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 60%;
+}
+.yt:hover{
+  box-shadow: 4px 5px 10px rgba(230, 1, 1, 0.932);
+  transform: scale(95%);
+  
+}
+.github{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 60%;
+}
+.github:hover{
+  box-shadow: 4px 5px 10px rgb(255, 255, 255);
+  transform: scale(95%);
+}
+.email{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 60%;
+}
+.email:hover{
+  box-shadow: 4px 5px 10px rgb(179, 68, 68);
+  transform: scale(95%);
+}
+.discord{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 60%;
+}
+.discord:hover{
+  box-shadow: 4px 5px 10px rgb(16, 47, 94);
+  transform: scale(95%);
+}
+.tiktok{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 60%;
+}
+.tiktok:hover{
+  box-shadow: 4px 5px 10px rgb(255, 255, 255);
+  transform: scale(95%);
+}
+
+
+@media only screen and (max-width: 600px) {
+.mail {
+  top: 1rem;
+  font-size: 15px;
+}
+.nama{
+  font-size: 10px;
+  left: 0.5rem;
+}
+.copy{
+  width: 2%;
+top: 3.2rem;
+left: -4.4rem;
+}
+.media{
+  width: 250px;
+  left: 1rem;
+}
+
+
+
+}
